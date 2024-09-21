@@ -31,8 +31,7 @@ keyPressed();
 function setup() {
   textSize(24);
   createCanvas(canvasSize, canvasSize + 100);
-  setNewFoodLocation(gridSize);
-  snakeArray.push({ x: Math.floor(gridSize / 2), y: Math.floor(gridSize / 2) });
+  resetGame();
 }
 
 function draw() {
