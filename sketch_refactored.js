@@ -159,8 +159,9 @@ function moveSnake() {
     snakeArray.unshift(newHead);
     snakeArray.pop();
 
-    //check if snakeArray hits itself
     for (let i = 1; i < snakeArray.length; i++) {
+      
+      //check if snakeArray hits itself
       if (
         snakeArray[0].x == snakeArray[i].x &&
         snakeArray[0].y == snakeArray[i].y
